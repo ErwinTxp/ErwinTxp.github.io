@@ -1,0 +1,13 @@
+﻿# Dependencies / build artifacts (none expected here, but safe)
+node_modules/
+dist/
+
+# Logs
+*.log
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

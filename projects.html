@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>项目经验 · 田旭鹏 (Erwin)</title>
+  <meta name="description" content="田旭鹏 (Erwin) 的项目经验：开发与学习项目汇总，可自行补充。" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <span class="brand-dot"></span>
+        <span>田旭鹏 <span class="brand-en">Erwin</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="打开菜单">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="education.html">学历</a></li>
+        <li><a href="projects.html">项目</a></li>
+        <li><a href="honors.html">荣誉</a></li>
+        <li><a href="hobbies.html">爱好</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-head">
+      <div class="eyebrow">Projects</div>
+      <h1>项目经验</h1>
+      <p class="lead">这里汇总我开发与学习过程中的项目。当前展示的是占位内容，你可以随时替换为真实项目。</p>
+    </div>
+
+    <div class="card reveal" style="border-left:4px solid var(--accent); margin-bottom:26px;">
+      <p class="subtle" style="margin:0; color:var(--ink-soft);">
+        ✏️ <strong>提示：</strong>这 3 条是示例占位内容。打开 <code>projects.html</code>，
+        把每条 <code>&lt;article&gt;</code> 里的标题、时间、角色、技术栈和描述改成你自己的项目即可。
+      </p>
+    </div>
+
+    <section>
+      <div class="grid grid-3">
+        <article class="card reveal" style="display:flex; flex-direction:column; gap:8px;">
+          <div class="subtle">项目 01 · 占位</div>
+          <h2>项目名称占位</h2>
+          <p class="subtle">2024 · 个人角色：开发 / 负责模块</p>
+          <div>
+            <span class="tag">Java</span>
+            <span class="tag teal">Spring Boot</span>
+          </div>
+          <p style="color:var(--ink-soft); margin-top:6px;">
+            用一两句话描述这个项目做什么、你负责的部分以及最终成果。
+            （示例：一个基于 Java 的 xxx 系统，实现 xxx 功能，达成了 xxx。）
+          </p>
+        </article>
+
+        <article class="card reveal" style="display:flex; flex-direction:column; gap:8px;">
+          <div class="subtle">项目 02 · 占位</div>
+          <h2>项目名称占位</h2>
+          <p class="subtle">2023 · 个人角色：开发 / 负责模块</p>
+          <div>
+            <span class="tag teal">鸿蒙</span>
+            <span class="tag">HarmonyOS</span>
+          </div>
+          <p style="color:var(--ink-soft); margin-top:6px;">
+            用一两句话描述这个项目做什么、你负责的部分以及最终成果。
+          </p>
+        </article>
+
+        <article class="card reveal" style="display:flex; flex-direction:column; gap:8px;">
+          <div class="subtle">项目 03 · 占位</div>
+          <h2>项目名称占位</h2>
+          <p class="subtle">2024 · 个人角色：开发 / 负责模块</p>
+          <div>
+            <span class="tag green">课程设计</span>
+            <span class="tag">团队协作</span>
+          </div>
+          <p style="color:var(--ink-soft); margin-top:6px;">
+            用一两句话描述这个项目做什么、你负责的部分以及最终成果。
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <div class="cta reveal">
+      <div>
+        <h2>想了解我的技能与认证？</h2>
+        <p>项目之外，我也考取了多项专业证书。</p>
+      </div>
+      <a class="btn btn-white" href="honors.html">我的证书与荣誉</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span data-year>2025</span> 田旭鹏 (Erwin) · <a href="mailto:erwintxp@outlook.com">erwintxp@outlook.com</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.querySelectorAll("[data-year]").forEach(el => (el.textContent = year()));</script>
+</body>
+</html>
