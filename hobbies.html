@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>个人爱好 · 田旭鹏 (Erwin)</title>
-  <meta name="description" content="田旭鹏 (Erwin) 的个人爱好：桌游战锤40k、军事拟真电子游戏（逃离塔科夫、战争雷霆）、编程与技术。" />
+  <title data-i18n-title="hob.title">个人爱好 · 田旭鹏 (Erwin)</title>
+  <meta name="description" data-i18n-desc="hob.desc" content="田旭鹏 (Erwin) 的个人爱好：桌游战锤40k、军事拟真电子游戏（逃离塔科夫、战争雷霆）、编程与技术。" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -12,94 +12,128 @@
     <nav class="nav">
       <a class="brand" href="index.html">
         <span class="brand-dot"></span>
-        <span>田旭鹏 <span class="brand-en">Erwin</span></span>
+        <span data-i18n="nav.brand">田旭鹏 <span class="brand-en">Erwin</span></span>
       </a>
-      <button class="nav-toggle" aria-label="打开菜单">☰</button>
       <ul class="nav-links">
-        <li><a href="index.html">首页</a></li>
-        <li><a href="education.html">学历</a></li>
-        <li><a href="projects.html">项目</a></li>
-        <li><a href="honors.html">荣誉</a></li>
-        <li><a href="hobbies.html">爱好</a></li>
+        <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+        <li><a href="education.html" data-i18n="nav.edu">学历</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">项目</a></li>
+        <li><a href="honors.html" data-i18n="nav.honors">荣誉</a></li>
+        <li><a href="hobbies.html" data-i18n="nav.hobbies">爱好</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="lang-toggle" title="中 / EN · Ctrl+Shift+L">🌐 EN</button>
+        <button class="nav-toggle" aria-label="打开菜单">☰</button>
+      </div>
     </nav>
   </header>
 
   <main class="container">
     <div class="page-head">
       <div class="eyebrow">Hobbies</div>
-      <h1>个人爱好</h1>
-      <p class="lead">学习与开发之外，我享受这些让生活更有趣的事情。</p>
+      <h1 data-i18n="hob.titleH1">个人爱好</h1>
+      <p class="lead" data-i18n="hob.lead">学习与开发之外，我享受这些让生活更有趣的事情。</p>
     </div>
 
     <section>
-      <h2 class="section-title">桌游 · 战锤 40K</h2>
-      <div class="card reveal">
-        <p style="color:var(--ink-soft);">
+      <h2 class="section-title" data-i18n="hob.s1.title">桌游 · 战锤 40K</h2>
+      <div class="card reveal" style="
+			background:
+			linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+			url('images/warharmmer.jpg');
+			background-size: cover;
+			background-position: center; padding: 20px;
+			border-radius: 12px;
+			color: white;">
+        <p style="color:var(--ink-soft);" data-i18n="hob.s1.text">
           我是 <strong>战锤 40,000（Warhammer 40K）</strong> 桌游的爱好者。宏大而黑暗的宇宙设定、
           阵营构建、涂装与对局的策略博弈都让我着迷。这不仅是一种娱乐，也让我体会到长期投入与细节打磨的乐趣。
         </p>
         <p style="margin-top:12px;">
-          <span class="tag amber">战锤 40K</span>
-          <span class="tag">桌游 / 模型</span>
-          <span class="tag green">策略博弈</span>
+          <span class="tag amber" data-i18n="hob.s1.tag1">战锤 40K</span>
+          <span class="tag" data-i18n="hob.s1.tag2">桌游 / 模型</span>
+          <span class="tag green" data-i18n="hob.s1.tag3">策略博弈</span>
         </p>
       </div>
     </section>
 
     <section>
-      <h2 class="section-title">电子游戏 · 军事拟真</h2>
+      <h2 class="section-title" data-i18n="hob.s2.title">电子游戏 · 军事拟真</h2>
       <div class="grid grid-2">
-        <div class="card reveal">
-          <h2>逃离塔科夫 (Escape from Tarkov)</h2>
-          <p class="subtle" style="margin-top:8px;">
+        <div class="card reveal" style="
+			background:
+			linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+			url('images/tarkov.jpg');
+			background-size: cover;
+			background-position: center; padding: 20px;
+			border-radius: 12px;
+			color: white;">
+          <h2 data-i18n="hob.s2.tarkov.title">逃离塔科夫 (Escape from Tarkov)</h2>
+          <p class="subtle" style="margin-top:8px;" data-i18n="hob.s2.tarkov.desc">
             硬核的拟真射击生存游戏，强调物资管理、风险决策与真实枪械操作。
             我欣赏它对细节和真实感的极致追求。
           </p>
-          <p style="margin-top:12px;"><span class="tag">FPS</span><span class="tag teal">战术拟真</span></p>
+          <p style="margin-top:12px;"><span class="tag">FPS</span><span class="tag teal" data-i18n="hob.s2.tarkov.tagTact">战术拟真</span></p>
         </div>
-        <div class="card reveal">
-          <h2>战争雷霆 (War Thunder)</h2>
-          <p class="subtle" style="margin-top:8px;">
+        <div class="card reveal" style="
+			background:
+			linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+			url('images/warthunder.jpg');
+			background-size: cover;
+			background-position: center; padding: 20px;
+			border-radius: 12px;
+			color: white;">
+          <h2 data-i18n="hob.s2.wt.title">战争雷霆 (War Thunder)</h2>
+          <p class="subtle" style="margin-top:8px;" data-i18n="hob.s2.wt.desc">
             涵盖海陆空的军事载具对战游戏，历史机型与战术体系丰富，适合钻研装备与对抗思路。
           </p>
-          <p style="margin-top:12px;"><span class="tag">载具对战</span><span class="tag teal">军事</span></p>
+          <p style="margin-top:12px;"><span class="tag" data-i18n="hob.s2.wt.tagVeh">载具对战</span><span class="tag teal" data-i18n="hob.s2.wt.tagMil">军事</span></p>
         </div>
       </div>
-      <p class="subtle" style="margin-top:14px;">
+      <p class="subtle" style="margin-top:14px;" data-i18n="hob.s2.summary">
         总的来说，我偏爱 <strong>军事拟真类</strong> 游戏：追求真实感、策略深度与持续的技巧成长。
       </p>
     </section>
 
     <section>
-      <h2 class="section-title">编程与技术</h2>
-      <div class="card reveal">
-        <p style="color:var(--ink-soft);">
+      <h2 class="section-title" data-i18n="hob.s3.title">编程与技术</h2>
+      <div class="card reveal" style="
+			background:
+			linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+			url('images/harness.png');
+			background-size: cover;
+			background-position: center; padding: 20px;
+			border-radius: 12px;
+			color: white;">
+        <p style="color:var(--ink-soft);" data-i18n="hob.s3.text">
           对技术的热爱是我持续学习的动力。无论是研究 <strong>Java 后端、鸿蒙开发</strong>，
-          还是动手把想法做成小工具和小站点，我都很享受「把想法变成现实」的过程。
+          还是动手把想法做成小工具和小站点，我都很享受「把想法变成现实」的过程。同时我十分喜欢 agent 技术，
+		  尤其对 DeepSeek harness 的 Agent = model + harness 理念十分认同，其中 harness 可以通过不同 plugins 进行拆装以实现我所需要的功能，
+		  十分强劲。
         </p>
         <p style="margin-top:12px;">
           <span class="tag">Java</span>
-          <span class="tag teal">鸿蒙 HarmonyOS</span>
-          <span class="tag green">造轮子 / 个人项目</span>
+          <span class="tag teal" data-i18n="hob.s3.tagHarmony">鸿蒙 HarmonyOS</span>
+          <span class="tag green" data-i18n="hob.s3.tagBuild">造轮子 / 个人项目</span>
         </p>
       </div>
     </section>
 
     <div class="cta reveal">
       <div>
-        <h2>喜欢这些内容？</h2>
-        <p>回到首页，看看完整介绍吧。</p>
+        <h2 data-i18n="hob.ctaTitle">喜欢这些内容？</h2>
+        <p data-i18n="hob.ctaText">回到首页，看看完整介绍吧。</p>
       </div>
-      <a class="btn btn-white" href="index.html">返回首页</a>
+      <a class="btn btn-white" href="index.html" data-i18n="hob.ctaBtn">返回首页</a>
     </div>
   </main>
 
   <footer class="site-footer">
-    <p>© <span data-year>2025</span> 田旭鹏 (Erwin) · <a href="mailto:erwintxp@outlook.com">erwintxp@outlook.com</a></p>
+    <p>© <span data-year>2025</span> <span data-i18n="footer.name">田旭鹏 (Erwin)</span> · <a href="mailto:erwintxp@outlook.com">erwintxp@outlook.com</a></p>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
   <script>document.querySelectorAll("[data-year]").forEach(el => (el.textContent = year()));</script>
 </body>
 </html>

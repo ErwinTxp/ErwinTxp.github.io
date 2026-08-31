@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>获得荣誉 · 田旭鹏 (Erwin)</title>
-  <meta name="description" content="田旭鹏 (Erwin) 的荣誉与证书：Java 软件开发工程师、英语四级、华为鸿蒙高级开发者。" />
+  <title data-i18n-title="hon.title">获得荣誉 · 田旭鹏 (Erwin)</title>
+  <meta name="description" data-i18n-desc="hon.desc" content="田旭鹏 (Erwin) 的荣誉与证书：Java 软件开发工程师、英语六级、华为鸿蒙高级开发者。" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -12,93 +12,124 @@
     <nav class="nav">
       <a class="brand" href="index.html">
         <span class="brand-dot"></span>
-        <span>田旭鹏 <span class="brand-en">Erwin</span></span>
+        <span data-i18n="nav.brand">田旭鹏 <span class="brand-en">Erwin</span></span>
       </a>
-      <button class="nav-toggle" aria-label="打开菜单">☰</button>
       <ul class="nav-links">
-        <li><a href="index.html">首页</a></li>
-        <li><a href="education.html">学历</a></li>
-        <li><a href="projects.html">项目</a></li>
-        <li><a href="honors.html">荣誉</a></li>
-        <li><a href="hobbies.html">爱好</a></li>
+        <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+        <li><a href="education.html" data-i18n="nav.edu">学历</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">项目</a></li>
+        <li><a href="honors.html" data-i18n="nav.honors">荣誉</a></li>
+        <li><a href="hobbies.html" data-i18n="nav.hobbies">爱好</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="lang-toggle" title="中 / EN · Ctrl+Shift+L">🌐 EN</button>
+        <button class="nav-toggle" aria-label="打开菜单">☰</button>
+      </div>
     </nav>
   </header>
 
   <main class="container">
     <div class="page-head">
       <div class="eyebrow">Honors &amp; Certificates</div>
-      <h1>获得荣誉与证书</h1>
-      <p class="lead">在学习和开发过程中获得的专业认证与荣誉。</p>
+      <h1 data-i18n="hon.titleH1">获得荣誉与证书</h1>
+      <p class="lead" data-i18n="hon.lead">在学习和开发过程中获得的专业认证与荣誉。</p>
     </div>
 
     <section>
-      <h2 class="section-title">专业证书</h2>
+      <h2 class="section-title" data-i18n="hon.certTitle">专业证书</h2>
       <div class="grid grid-3">
         <div class="card reveal">
           <div style="margin-bottom:10px;">
-            <span class="tag green">工业与信息化部</span>
+            <span class="tag green" data-i18n="hon.cert1.tag">工业与信息化部</span>
           </div>
-          <h2>Java 软件开发工程师</h2>
-          <p class="subtle" style="margin-top:8px;">
+          <h2 data-i18n="hon.cert1.name">Java 软件开发工程师</h2>
+          <p class="subtle" style="margin-top:8px;" data-i18n="hon.cert1.desc">
             由工业和信息化部人才交流中心颁发，考核 Java 软件开发相关的专业知识与技能。
+			证书编号：GXRCCP018202407490
           </p>
+		  <img src="images/certificate.jpg" onerror="this.style.display='none'" />
         </div>
 
         <div class="card reveal">
           <div style="margin-bottom:10px;">
-            <span class="tag teal">华为</span>
+            <span class="tag teal" data-i18n="hon.cert2.tag">华为</span>
           </div>
-          <h2>鸿蒙高级开发者</h2>
-          <p class="subtle" style="margin-top:8px;">
+          <h2 data-i18n="hon.cert2.name">鸿蒙高级开发者</h2>
+          <p class="subtle" style="margin-top:8px;" data-i18n="hon.cert2.desc">
             华为 HarmonyOS 生态开发者认证，涵盖鸿蒙应用开发的高级知识与实践能力。
+			证书编号：TCNqjmrt5x
           </p>
+		  <img src="images/huawei.jpg" onerror="this.style.display='none'" />
         </div>
 
         <div class="card reveal">
           <div style="margin-bottom:10px;">
-            <span class="tag amber">英语</span>
+            <span class="tag amber" data-i18n="hon.cert3.tag">英语</span>
           </div>
-          <h2>大学英语四级 (CET-4)</h2>
-          <p class="subtle" style="margin-top:8px;">
-            全国大学英语四级考试，具备日常交流与专业文献阅读的英语能力。
+          <h2 data-i18n="hon.cert3.name">大学英语六级 (CET-6)</h2>
+          <p class="subtle" style="margin-top:8px;" data-i18n="hon.cert3.desc">
+            全国大学英语六级考试，具备专业领域交流与专业文献阅读的英语能力。
           </p>
+		  <img src="images/cet-6.png" onerror="this.style.display='none'" />
         </div>
       </div>
     </section>
 
+	<section>
+		<h2 class="section-title" data-i18n="hon.compTitle">参加的比赛，演讲与获奖期刊</h2>
+		<div class="grid grid-3">
+		  <div class="card reveal">
+		    <h2 data-i18n="hon.comp1.title">白俄罗斯国立工业大学国际留学生小组问答比赛第一名</h2>
+		    <p class="subtle" style="margin-top:8px;" data-i18n="hon.comp1.subtitle">Хлеб и Мир</p>
+			<img src="images/competition1.jpg" onerror="this.style.display='none'" />
+			<img src="images/competition2.jpg" onerror="this.style.display='none'" />
+		  </div>
+		  <div class="card reveal">
+		    <h2 data-i18n="hon.comp2.title">上海合作组织学术会议小组会议演讲</h2>
+		    <p class="subtle" style="margin-top:8px;" data-i18n="hon.comp2.subtitle">对习近平主席政策解析，获入围资格</p>
+			<img src="images/speech.jpg" onerror="this.style.display='none'" />
+		  </div>
+		  <div class="card reveal">
+		    <h2 data-i18n="hon.comp3.title">期刊获奖</h2>
+		    <p class="subtle" style="margin-top:8px;" data-i18n="hon.comp3.subtitle">本科期间对中国经济结构分析的文章被选入 ESCI 四区校刊《Наука и техника》中</p>
+			<img src="images/journal article.jpg" onerror="this.style.display='none'" />
+		  </div>
+		</div>
+	</section>
+
     <section>
-      <h2 class="section-title">能力亮点</h2>
+      <h2 class="section-title" data-i18n="hon.hlTitle">能力亮点</h2>
       <div class="grid grid-3">
         <div class="card reveal">
-          <h2>后端开发</h2>
-          <p class="subtle" style="margin-top:8px;">Java 语言基础与工程规范，面向对象与常用框架。</p>
+          <h2 data-i18n="hon.hl1.title">后端开发</h2>
+          <p class="subtle" style="margin-top:8px;" data-i18n="hon.hl1.desc">Java 语言基础与工程规范，面向对象与常用框架。</p>
         </div>
         <div class="card reveal">
-          <h2>鸿蒙生态</h2>
-          <p class="subtle" style="margin-top:8px;">HarmonyOS 应用开发，了解多端协同与技术栈。</p>
+          <h2 data-i18n="hon.hl2.title">鸿蒙生态</h2>
+          <p class="subtle" style="margin-top:8px;" data-i18n="hon.hl2.desc">HarmonyOS 应用开发，了解多端协同与技术栈。</p>
         </div>
         <div class="card reveal">
-          <h2>复合背景</h2>
-          <p class="subtle" style="margin-top:8px;">经济学 + 软件工程的跨学科视角，善于把业务与技术结合。</p>
+          <h2 data-i18n="hon.hl3.title">复合背景</h2>
+          <p class="subtle" style="margin-top:8px;" data-i18n="hon.hl3.desc">经济学 + 软件工程的跨学科视角，善于把业务与技术结合。</p>
         </div>
       </div>
     </section>
 
     <div class="cta reveal">
       <div>
-        <h2>一起聊聊兴趣爱好</h2>
-        <p>工作与学习之外，我也有丰富的业余生活。</p>
+        <h2 data-i18n="hon.ctaTitle">一起聊聊兴趣爱好</h2>
+        <p data-i18n="hon.ctaText">工作与学习之外，我也有丰富的业余生活。</p>
       </div>
-      <a class="btn btn-white" href="hobbies.html">查看我的爱好</a>
+      <a class="btn btn-white" href="hobbies.html" data-i18n="hon.ctaBtn">查看我的爱好</a>
     </div>
   </main>
 
   <footer class="site-footer">
-    <p>© <span data-year>2025</span> 田旭鹏 (Erwin) · <a href="mailto:erwintxp@outlook.com">erwintxp@outlook.com</a></p>
+    <p>© <span data-year>2025</span> <span data-i18n="footer.name">田旭鹏 (Erwin)</span> · <a href="mailto:erwintxp@outlook.com">erwintxp@outlook.com</a></p>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
   <script>document.querySelectorAll("[data-year]").forEach(el => (el.textContent = year()));</script>
 </body>
 </html>

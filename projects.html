@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>项目经验 · 田旭鹏 (Erwin)</title>
-  <meta name="description" content="田旭鹏 (Erwin) 的项目经验：开发与学习项目汇总，可自行补充。" />
+  <title data-i18n-title="proj.title">项目经验 · 田旭鹏 (Erwin)</title>
+  <meta name="description" data-i18n-desc="proj.desc" content="田旭鹏 (Erwin) 的项目经验：开发与学习项目汇总，可自行补充。" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -12,72 +12,71 @@
     <nav class="nav">
       <a class="brand" href="index.html">
         <span class="brand-dot"></span>
-        <span>田旭鹏 <span class="brand-en">Erwin</span></span>
+        <span data-i18n="nav.brand">田旭鹏 <span class="brand-en">Erwin</span></span>
       </a>
-      <button class="nav-toggle" aria-label="打开菜单">☰</button>
       <ul class="nav-links">
-        <li><a href="index.html">首页</a></li>
-        <li><a href="education.html">学历</a></li>
-        <li><a href="projects.html">项目</a></li>
-        <li><a href="honors.html">荣誉</a></li>
-        <li><a href="hobbies.html">爱好</a></li>
+        <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+        <li><a href="education.html" data-i18n="nav.edu">学历</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">项目</a></li>
+        <li><a href="honors.html" data-i18n="nav.honors">荣誉</a></li>
+        <li><a href="hobbies.html" data-i18n="nav.hobbies">爱好</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="lang-toggle" title="中 / EN · Ctrl+Shift+L">🌐 EN</button>
+        <button class="nav-toggle" aria-label="打开菜单">☰</button>
+      </div>
     </nav>
   </header>
 
   <main class="container">
     <div class="page-head">
       <div class="eyebrow">Projects</div>
-      <h1>项目经验</h1>
-      <p class="lead">这里汇总我开发与学习过程中的项目。当前展示的是占位内容，你可以随时替换为真实项目。</p>
-    </div>
-
-    <div class="card reveal" style="border-left:4px solid var(--accent); margin-bottom:26px;">
-      <p class="subtle" style="margin:0; color:var(--ink-soft);">
-        ✏️ <strong>提示：</strong>这 3 条是示例占位内容。打开 <code>projects.html</code>，
-        把每条 <code>&lt;article&gt;</code> 里的标题、时间、角色、技术栈和描述改成你自己的项目即可。
-      </p>
+      <h1 data-i18n="proj.titleH1">项目经验</h1>
     </div>
 
     <section>
       <div class="grid grid-3">
         <article class="card reveal" style="display:flex; flex-direction:column; gap:8px;">
-          <div class="subtle">项目 01 · 占位</div>
-          <h2>项目名称占位</h2>
-          <p class="subtle">2024 · 个人角色：开发 / 负责模块</p>
+          <div class="subtle" data-i18n="proj1.category">商城系统开发</div>
+          <h2 data-i18n="proj1.name">仿小米商城的购物系统开发</h2>
+          <p class="subtle" data-i18n="proj1.role">2024 · 个人角色：开发 / 负责模块</p>
           <div>
             <span class="tag">Java</span>
             <span class="tag teal">Spring Boot</span>
+            <span class="tag green" data-i18n="proj1.tagCourse">课程设计</span>
           </div>
-          <p style="color:var(--ink-soft); margin-top:6px;">
-            用一两句话描述这个项目做什么、你负责的部分以及最终成果。
-            （示例：一个基于 Java 的 xxx 系统，实现 xxx 功能，达成了 xxx。）
+          <p style="color:var(--ink-soft); margin-top:6px;" data-i18n="proj1.desc">
+            此项目最终效果为一个可以部署的传统购物网站，拥有完整前后端与数据库。此外，我们还桥接了小米商城的 API，
+			使其能够代替数据库的作用。我在本项目中主要负责后端的编写。
           </p>
         </article>
 
         <article class="card reveal" style="display:flex; flex-direction:column; gap:8px;">
-          <div class="subtle">项目 02 · 占位</div>
-          <h2>项目名称占位</h2>
-          <p class="subtle">2023 · 个人角色：开发 / 负责模块</p>
+          <div class="subtle" data-i18n="proj2.category">鸿蒙程序</div>
+          <h2 data-i18n="proj2.name">鸿蒙书城 App 的开发</h2>
+          <p class="subtle" data-i18n="proj2.role">2025 · 个人角色：开发 / 负责整体</p>
           <div>
-            <span class="tag teal">鸿蒙</span>
+            <span class="tag teal" data-i18n="proj2.tagHarmony">鸿蒙</span>
             <span class="tag">HarmonyOS</span>
           </div>
-          <p style="color:var(--ink-soft); margin-top:6px;">
-            用一两句话描述这个项目做什么、你负责的部分以及最终成果。
+          <p style="color:var(--ink-soft); margin-top:6px;" data-i18n="proj2.desc">
+            本项目为我本人独立完成，封装并部署了一个完整的基于鸿蒙 API 9 的书城 App。其拥有登录账户（通过数据库确认）、浏览书城，
+			加入收藏、加入购物车、购买与付款功能（通过桥接阿里的支付端口 API）。
           </p>
         </article>
 
         <article class="card reveal" style="display:flex; flex-direction:column; gap:8px;">
-          <div class="subtle">项目 03 · 占位</div>
-          <h2>项目名称占位</h2>
-          <p class="subtle">2024 · 个人角色：开发 / 负责模块</p>
+          <div class="subtle" data-i18n="proj3.category">入库资料编写</div>
+          <h2 data-i18n="proj3.name">帮助重庆川博工程技术有限公司完成入库资料的编写与资质证书获取</h2>
+          <p class="subtle" data-i18n="proj3.role">2026 · 个人角色：数据分析与整理 / 负责整体</p>
           <div>
-            <span class="tag green">课程设计</span>
-            <span class="tag">团队协作</span>
+            <span class="tag green" data-i18n="proj3.tagCompany">企业订单</span>
+            <span class="tag" data-i18n="proj3.tagEcon">经济分析</span>
           </div>
-          <p style="color:var(--ink-soft); margin-top:6px;">
-            用一两句话描述这个项目做什么、你负责的部分以及最终成果。
+          <p style="color:var(--ink-soft); margin-top:6px;" data-i18n="proj3.desc">
+            重庆川博工程技术有限公司注册资本为 1500 万元人民币。公司是集建筑工程总承包、市政公用工程总承包、
+			装饰设计施工、智能化信息系统集成、材料销售等多元化业务于一体的综合性工程技术企业。其希望注册并通过“四库一平台”中县级主管部门审核，
+			于是委托本人帮其进行了需要的 20 份资料填写与整理，最后成功通过了县政府审核。
           </p>
         </article>
       </div>
@@ -85,18 +84,19 @@
 
     <div class="cta reveal">
       <div>
-        <h2>想了解我的技能与认证？</h2>
-        <p>项目之外，我也考取了多项专业证书。</p>
+        <h2 data-i18n="proj.ctaTitle">想了解我的技能与认证？</h2>
+        <p data-i18n="proj.ctaText">项目之外，我也考取了多项专业证书。</p>
       </div>
-      <a class="btn btn-white" href="honors.html">我的证书与荣誉</a>
+      <a class="btn btn-white" href="honors.html" data-i18n="proj.ctaBtn">我的证书与荣誉</a>
     </div>
   </main>
 
   <footer class="site-footer">
-    <p>© <span data-year>2025</span> 田旭鹏 (Erwin) · <a href="mailto:erwintxp@outlook.com">erwintxp@outlook.com</a></p>
+    <p>© <span data-year>2025</span> <span data-i18n="footer.name">田旭鹏 (Erwin)</span> · <a href="mailto:erwintxp@outlook.com">erwintxp@outlook.com</a></p>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
   <script>document.querySelectorAll("[data-year]").forEach(el => (el.textContent = year()));</script>
 </body>
 </html>

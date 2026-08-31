@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>田旭鹏 · Erwin — 个人主页</title>
-  <meta name="description" content="田旭鹏 (Erwin) 的个人主页：经济学在读，Java 软件开发者，鸿蒙开发者。欢迎了解我的学历、项目、荣誉与爱好。" />
+  <title data-i18n-title="index.title">田旭鹏 · Erwin — 个人主页</title>
+  <meta name="description" data-i18n-desc="index.desc" content="田旭鹏 (Erwin) 的个人主页：经济学在读，Java 软件开发者，鸿蒙开发者。欢迎了解我的学历、项目、荣誉与爱好。" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -12,16 +12,19 @@
     <nav class="nav">
       <a class="brand" href="index.html">
         <span class="brand-dot"></span>
-        <span>田旭鹏 <span class="brand-en">Erwin</span></span>
+        <span data-i18n="nav.brand">田旭鹏 <span class="brand-en">Erwin</span></span>
       </a>
-      <button class="nav-toggle" aria-label="打开菜单">☰</button>
       <ul class="nav-links">
-        <li><a href="index.html">首页</a></li>
-        <li><a href="education.html">学历</a></li>
-        <li><a href="projects.html">项目</a></li>
-        <li><a href="honors.html">荣誉</a></li>
-        <li><a href="hobbies.html">爱好</a></li>
+        <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+        <li><a href="education.html" data-i18n="nav.edu">学历</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">项目</a></li>
+        <li><a href="honors.html" data-i18n="nav.honors">荣誉</a></li>
+        <li><a href="hobbies.html" data-i18n="nav.hobbies">爱好</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="lang-toggle" title="中 / EN · Ctrl+Shift+L">🌐 EN</button>
+        <button class="nav-toggle" aria-label="打开菜单">☰</button>
+      </div>
     </nav>
   </header>
 
@@ -29,94 +32,94 @@
     <section class="hero">
       <div>
         <div class="page-head" style="margin-bottom:0;">
-          <div class="eyebrow">Hi, 你好 👋</div>
-          <h1>我是 <span class="accent">田旭鹏</span></h1>
-          <div class="en">Erwin · 经济学在读 / Java 软件开发者</div>
-          <p class="lede">
+          <div class="eyebrow" data-i18n="index.eyebrow">Hi, 你好 👋</div>
+          <h1 data-i18n="index.heroTitle">我是 <span class="accent">田旭鹏</span></h1>
+          <div class="en" data-i18n="index.heroSub">Erwin · 经济学在读 / Java 软件开发者</div>
+          <p class="lede" data-i18n="index.heroLede">
             一名热爱技术与创造的学习者。正在攻读经济学学位，同时深耕
             Java 软件工程与华为鸿蒙生态开发。相信持续学习与好奇心能把热爱变成能力。
           </p>
         </div>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="projects.html">查看我的项目</a>
-          <a class="btn btn-ghost" href="honors.html">我的证书与荣誉</a>
+          <a class="btn btn-primary" href="projects.html" data-i18n="index.heroBtnProjects">查看我的项目</a>
+          <a class="btn btn-ghost" href="honors.html" data-i18n="index.heroBtnHonors">我的证书与荣誉</a>
         </div>
       </div>
 
       <div class="portrait reveal">
         <div class="photo-placeholder">
-          <div class="big">田旭鹏</div>
-          <div class="hint">照片占位 · 请将 images/avatar.jpg 替换为你的照片</div>
+          <div class="big" data-i18n="index.portraitBig">田旭鹏</div>
         </div>
-        <img src="images/avatar.jpg" alt="田旭鹏照片" onerror="this.style.display='none'" />
+        <img src="images/self photo.png" alt="田旭鹏照片" data-i18n-alt="index.portraitAlt" onerror="this.style.display='none'" />
       </div>
     </section>
 
     <section class="facts">
       <div class="fact reveal">
-        <div class="k">当前身份</div>
-        <div class="v">经济学本科在读</div>
+        <div class="k" data-i18n="index.factRoleK">当前身份</div>
+        <div class="v" data-i18n="index.factRoleV">经济学本科在读</div>
       </div>
       <div class="fact reveal">
-        <div class="k">开发方向</div>
-        <div class="v">Java · 鸿蒙</div>
+        <div class="k" data-i18n="index.factFocusK">开发方向</div>
+        <div class="v" data-i18n="index.factFocusV">Java · 鸿蒙</div>
       </div>
       <div class="fact reveal">
-        <div class="k">所在地</div>
-        <div class="v">白俄罗斯 / 中国</div>
+        <div class="k" data-i18n="index.factLocK">所在地</div>
+        <div class="v" data-i18n="index.factLocV">白俄罗斯 / 中国</div>
       </div>
       <div class="fact reveal">
-        <div class="k">语言</div>
-        <div class="v">中文 · 英语</div>
+        <div class="k" data-i18n="index.factLangK">语言</div>
+        <div class="v" data-i18n="index.factLangV">中文 · 英语</div>
       </div>
     </section>
 
     <section>
-      <h2 class="section-title">关于我</h2>
+      <h2 class="section-title" data-i18n="index.aboutTitle">关于我</h2>
       <div class="grid grid-2">
         <div class="card reveal">
-          <h2>学习与成长</h2>
-          <p class="subtle" style="margin-top:6px;">
-            在白俄罗斯国立工业大学攻读经济学本科，同时系统学习软件工程。
+          <h2 data-i18n="index.aboutLearningTitle">学习与成长</h2>
+          <p class="subtle" style="margin-top:6px;" data-i18n="index.aboutLearningText">
+			2022~2025期间于华中科技大学分校武昌首义学院攻读计算机科学（华为云）专业。
+            后经本校"3＋1"合作计划赴白俄罗斯国立工业大学攻读经济学本科，同时系统学习软件工程。
             已获得工业和信息化部 Java 软件开发工程师、华为鸿蒙高级开发者等认证，
             保持对技术前沿的持续关注。
           </p>
         </div>
         <div class="card reveal">
-          <h2>技术标签</h2>
+          <h2 data-i18n="index.aboutSkillsTitle">技术标签</h2>
           <div style="margin-top:12px;">
-            <span class="tag">Java</span>
-            <span class="tag teal">鸿蒙 HarmonyOS</span>
-            <span class="tag green">软件开发</span>
-            <span class="tag amber">经济学</span>
-            <span class="tag">英语 CET-4</span>
+            <span class="tag" data-i18n="index.tagJava">Java</span>
+            <span class="tag teal" data-i18n="index.tagHarmony">鸿蒙 HarmonyOS</span>
+            <span class="tag green" data-i18n="index.tagDev">软件开发</span>
+            <span class="tag amber" data-i18n="index.tagEcon">经济学</span>
+			<span class="tag" data-i18n="index.tagCet">英语 CET-6</span>
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <h2 class="section-title">联系方式</h2>
+      <h2 class="section-title" data-i18n="index.contactTitle">联系方式</h2>
       <div class="contact-row">
         <div class="contact-item reveal">
           <div class="icon">✉️</div>
           <div>
-            <div class="label">邮箱</div>
+            <div class="label" data-i18n="index.contactEmailLabel">邮箱</div>
             <div class="value"><a href="mailto:erwintxp@outlook.com">erwintxp@outlook.com</a></div>
           </div>
         </div>
         <div class="contact-item reveal">
           <div class="icon">📱</div>
           <div>
-            <div class="label">电话</div>
+            <div class="label" data-i18n="index.contactPhoneLabel">电话</div>
             <div class="value">+86 180 692 12893 · +375 44 466 9026</div>
           </div>
         </div>
         <div class="contact-item reveal">
           <div class="icon">🌐</div>
           <div>
-            <div class="label">语言</div>
-            <div class="value">中文 · English</div>
+            <div class="label" data-i18n="index.contactLangLabel">语言</div>
+            <div class="value" data-i18n="index.contactLangValue">中文 · English</div>
           </div>
         </div>
       </div>
@@ -124,18 +127,19 @@
 
     <div class="cta reveal">
       <div>
-        <h2>想进一步了解我？</h2>
-        <p>欢迎来到奖学金、项目与证书页，或直接通过邮件与我联系。</p>
+        <h2 data-i18n="index.ctaTitle">想进一步了解我？</h2>
+        <p data-i18n="index.ctaText">欢迎来到奖学金、项目与证书页，或直接通过邮件与我联系。</p>
       </div>
-      <a class="btn btn-white" href="education.html">看看我的学历</a>
+      <a class="btn btn-white" href="education.html" data-i18n="index.ctaBtn">看看我的学历</a>
     </div>
   </main>
 
   <footer class="site-footer">
-    <p>© <span data-year>2025</span> 田旭鹏 (Erwin) · <a href="mailto:erwintxp@outlook.com">erwintxp@outlook.com</a></p>
+    <p>© <span data-year>2025</span> <span data-i18n="footer.name">田旭鹏 (Erwin)</span> · <a href="mailto:erwintxp@outlook.com">erwintxp@outlook.com</a></p>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
   <script>document.querySelectorAll("[data-year]").forEach(el => (el.textContent = year()));</script>
 </body>
 </html>
